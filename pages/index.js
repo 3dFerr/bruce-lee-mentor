@@ -5,6 +5,12 @@ import { useState } from "react";
 
 const Home = () => {
   const [userInput, setUserInput] = useState("");
+
+  const onUserChangedText = (event) => {
+    console.log(event.target.value);
+    setUserInput(event.target.value);
+  };
+
   return (
     <div className="root">
       <Head>
