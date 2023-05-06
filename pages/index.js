@@ -23,8 +23,8 @@ const Home = () => {
           </div>
           <div className="header-subtitle">
             <h2>
-              Escreva um tópico que você gostaria que Donald Trump explicasse
-              para você (ex: fissão nuclear, a filosofia das artes maciais, o
+              Escreva um tópico que você gostaria que Bruce Lee explicasse para
+              você (ex: fissão nuclear, a filosofia das artes maciais, o
               significado da vida).
             </h2>
           </div>
