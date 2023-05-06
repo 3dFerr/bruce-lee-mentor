@@ -60,7 +60,7 @@ const Home = () => {
             onChange={onUserChangedText}
           />
           <div className="prompt-buttons">
-            <a className="generate-button" onClick={null}>
+            <a className="generate-button" onClick={callGenerateEndpoint}>
               <div className="generate">
                 <p>Gerar</p>
               </div>
