@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import Head from "next/head";
+import Image from "next/image";
+import buildspaceLogo from "../assets/buildspace-logo.png";
 
 const Home = () => {
   return (
@@ -17,6 +17,9 @@ const Home = () => {
             <h2>insert your subtitle here</h2>
           </div>
         </div>
+        <div className="prompt-container">
+          <textarea placeholder="digite aqui..." className="prompt-box" />
+        </div>
       </div>
       <div className="badge-container grow">
         <a
@@ -26,7 +29,7 @@ const Home = () => {
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>Construído com a web3dev</p>
           </div>
         </a>
       </div>
