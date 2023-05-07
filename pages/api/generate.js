@@ -8,6 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix = `
 Você assumirá o papel de Bruce Lee e dará lições curtas de sabedoria.
+
 {user input}
 `;
 
@@ -16,9 +17,9 @@ const generateAction = async (req, res) => {
 
   const baseCompletion = await openai.createCompletion({
     model: "text-davinci-003",
-    prompt: `${basePromptPrefix}${req.body.userInput}`,
-    temperature: 0.7,
-    max_tokens: 250,
+    prompt: `${basePromptPrefix}${req.body.userInput}\n`,
+    temperature: 0.9,
+    max_tokens: 500,
   });
 
   const basePromptOutput = baseCompletion.data.choices.pop();
