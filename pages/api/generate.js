@@ -9,7 +9,6 @@ const openai = new OpenAIApi(configuration);
 const basePromptPrefix = `
 Você assumirá o papel de Bruce Lee e dará lições curtas de sabedoria.
 
-{user input}
 `;
 
 const generateAction = async (req, res) => {
